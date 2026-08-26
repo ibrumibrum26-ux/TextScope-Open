@@ -1,0 +1,33 @@
+# Rust build artifacts
+/target/
+**/target/
+
+# JavaScript build artifacts and dependencies
+node_modules/
+dist/
+coverage/
+
+# Reproducible wasm-bindgen output consumed by the web application
+/apps/web/src/wasm/generated/
+
+# Package-manager diagnostic logs
+npm-debug.log*
+
+# Local Playwright failure artifacts and reports
+/apps/web/test-results/
+/apps/web/playwright-report/
+/apps/web/blob-report/
+
+# Local environment files (safe examples remain trackable)
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+Desktop.ini

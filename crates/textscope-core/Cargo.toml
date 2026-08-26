@@ -1,0 +1,21 @@
+[package]
+name = "textscope-core"
+description = "Deterministic domain core for TextScope"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+html5gum = { version = "0.8.4", default-features = false }
+lopdf = { version = "=0.44.0", default-features = false, features = ["wasm_js"] }
+roxmltree = { version = "0.21.1", default-features = false, features = ["positions", "std"] }
+scraper = { version = "0.27.0", default-features = false, features = ["errors"] }
+unicode-normalization = "0.1.25"
+unicode-properties = { version = "0.1.4", default-features = false, features = ["general-category"] }
+unicode-script = "0.5.8"
+unicode_names2 = "3.1.0"
+zip = { version = "=8.6.0", default-features = false, features = ["deflate-flate2-zlib-rs"] }
